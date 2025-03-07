@@ -43,7 +43,7 @@ productsController.updateProducts = async (req, res) => {
 }
 
 // SELECT 1 PRODUCT BY ID
-productsController.getProducts = async (res, req) => {
+productsController.getProduct = async (req, res) => {
     const product = await productsModel.findById(req.params.id)
     res.json(product);
 };

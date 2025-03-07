@@ -13,7 +13,7 @@ para poder buscar datos generales, estos fueron movidos abajo porque, de nuevo, 
 //Al buscar por id
 
 router.route("/:id") // la "/" significa que es /api/productos, los ":" significa que viene un parametro
-.get(productsController.getProducts)
+.get(productsController.getProduct)
 .put(productsController.updateProducts)
 .delete(productsController.deleteProducts)
 
